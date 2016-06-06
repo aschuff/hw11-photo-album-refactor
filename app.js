@@ -38,7 +38,8 @@ var albumsPage = {
           $('.albumThumbnails').html(photosString);
           $('.albumThumbnails').addClass('active');
           $('.albums').hide();
-          $('.home').removeClass('hidden')
+          $('.home').removeClass('hidden');
+          $('.sidebar').removeClass('hidden');
         })
 
       //sidebar event - puts individual albums on the page when clicked
@@ -93,7 +94,9 @@ var albumsPage = {
         $('.albums').html(albumsString);
         $('.albums').removeClass('hidden').show();
         $('albumThumbnails').addClass('hidden');
+        $('.photoZoom').hide();
         $('input').removeClass('hidden').show();
+        $('.photo').remove();
       })
     },
     templification: function(template) {
