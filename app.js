@@ -30,7 +30,7 @@ var albumsPage = {
           var albumId = $(this).data('id');
           var chosenAlbum = albums.filter(function (item, idx, arr){
             return item.id === albumId;
-        })
+          })
         var photosString = '';
           chosenAlbum[0].pictures.forEach(function(item, idx, arr){
             photosString += albumsPage.htmlGenerator(photoPageTmpl.picturesInAlbumTmpl,item)
@@ -38,14 +38,14 @@ var albumsPage = {
           $('.albumThumbnails').html(photosString);
           $('.albumThumbnails').addClass('active');
           $('.albums').hide();
+          $('.home').removeClass('hidden')
         })
+
       //sidebar event - puts individual albums on the page when clicked
         $('.sidebar').on('click', 'li', function (event) {
           console.log("Hey there" );
-
              event.preventDefault();
              var clickedListItem = $(this).text();
-
              var chosenAlbum = albums.filter(function (item, idx, arr){
                return item.id === clickedListItem;
              })
@@ -56,7 +56,9 @@ var albumsPage = {
            $('.albumThumbnails').html(photosString);
            $('.albumThumbnails').addClass('active');
            $('.albums').addClass('hidden');
+           $('.sidebar').removeClass('hidden');
          });
+
       //single photo view
       var chosenBigPhoto =
         albums.filter(function(item, idx, arr){
@@ -68,6 +70,7 @@ var albumsPage = {
           var chosenPhoto = albums.filter(function (item, idx, arr){
             return item.photo === photoId;
         })
+
         var photosBig = '';
           chosenPhoto[0].pictures.forEach(function(item, idx, arr){
             photosBig += albumsPage.htmlGenerator(photoPageTmpl.picturesInAlbumTmpl,item)
@@ -90,6 +93,7 @@ var albumsPage = {
         $('.albums').html(albumsString);
         $('.albums').removeClass('hidden').show();
         $('albumThumbnails').addClass('hidden');
+        $('input').removeClass('hidden').show();
       })
     },
     templification: function(template) {

@@ -1,5 +1,5 @@
 var photoPageTmpl =  {
-  albumCoversTmpl:  `<div class="album" data-id= <%=id%>>
+  albumCoversTmpl:  `<div class="album" data-id='<%=id%>'>
                   <img src= "<%=cover%>" alt="">
                   <h3> <%=title%> </h3>
                   </div>
