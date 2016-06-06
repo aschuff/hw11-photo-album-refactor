@@ -1,0 +1,111 @@
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  background-color: #266681;
+}
+div.pageContainter {
+  margin: 0 auto;
+  width: 80%;
+  border: dashed antiquewhite;
+  background-color: #329AAC;
+}
+header div{
+  text-align: center;
+  font-size: 28px;
+  background-color: #D2B112;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+h1 {
+  border: antiquewhite dashed;
+  color: antiquewhite;
+}
+.hidden {
+  display: none;
+}
+input {
+  color: antiquewhite;
+  background-color: #D2B112;
+  font-size: 16px;
+  border: antiquewhite dashed;
+  margin: 4px 0;
+  width: 12.2em;
+}
+input:hover {
+  opacity: .7;
+}
+aside {
+  width: 13%;
+  height: 15em;
+  background-color: #D2B112;
+  margin-right: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: antiquewhite;
+  border: antiquewhite dashed 2px;
+  position: absolute;
+}
+li {
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2.5;
+  text-align: justify;
+}
+li:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+  section.albums.active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-left: 10em;
+  }
+  section.albumThumbnails.active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-left: 10em;
+  }
+  section.photoZoom.active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-left: 10em;
+  }
+  img{
+    min-width: 15em;
+    max-height: 15em;
+    margin-left: 20%;
+    border: antiquewhite solid;
+    margin: 0 3px;
+    border-radius: 36px;
+  }
+  img:hover{
+    opacity: .7;
+  }
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: normal;
+    border: antiquewhite solid;
+    background-color: #D2B112;
+    width: 9em;
+    margin: 10px auto;
+    margin-bottom: 20%;
+  }
+h3:hover {
+    opacity: .7;
+    cursor: pointer;
+  }

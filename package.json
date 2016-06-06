@@ -1,0 +1,26 @@
+{
+  "name": "hw10-photo-album-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w styles.scss styles.css",
+    "start": "serve & npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aschuff/hw10-photo-album-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aschuff/hw10-photo-album-page/issues"
+  },
+  "homepage": "https://github.com/aschuff/hw10-photo-album-page#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4",
+    "underscore": "^1.8.3"
+  }
+}
