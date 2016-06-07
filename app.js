@@ -97,6 +97,7 @@ var albumsPage = {
         $('.photoZoom').hide();
         $('input').removeClass('hidden').show();
         $('.photo').remove();
+        $('.sidebar').hide();
       })
     },
     templification: function(template) {
